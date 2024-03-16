@@ -11,5 +11,75 @@
     <a href="#" class="bg-green-500 p-3 text-white inline-block m-3 rounded shadow hover:bg-green-700">Ini Tombol</a>
     <p class="m-3 bg-yellow-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam tenetur fuga illo mollgnissimos odit adipisci cumque deleniti quo asperiores repellendus, natus animi quidem enim facere praesentium impedit!</p>
     <p class="m-3 bg-lime-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellendus unde dolor beatae rem praesentium laborum, animi, voluptates numquam dignissimos, velit doloremque ad sapiente ipsam nesciunt ex officiis! Dolor id, ea optio molestiae odio quam natus distinctio ut suscipit assumenda quia nulla exercitationem rem dolorem nobis laboriosam saepe minus sit!</p>
+<!--  -->
+<div>
+    <canvas id="myChart"></canvas>
+    
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script>
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', 'Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [105, 20, 6, 2, 94, 155, 60, 25, 7, 3, 11, 9, 2],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+  <br>
+  <!--  -->
+  
+  
+    <!--  -->
+    <canvas id="{myChart}" width="{}" height="{}"></canvas>
+<script>
+    var ctx = document.getElementById('{myChart}').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: '{line}',
+
+        data: {
+            labels: {},
+            datasets: [{
+                label: "{My Chart}",
+                data: {},
+                backgroundColor: {},
+                borderColor: {},
+                borderWidth: {}
+            }]
+        },
+
+        options: {
+            title: {
+                text: "{My Chart}",
+                display: {true},
+            },
+            events: [{}],
+            legend: {
+                display: {true},
+            },
+            tooltips: {
+                mode: '{}'
+            },
+            layout: {{}},
+            animation: {{}}
+        }
+    });
+</script>
+
 </body>
 </html>

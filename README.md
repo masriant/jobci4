@@ -5,6 +5,33 @@ ext:
 ~ autoprefixer
 ~ live preview
 
+~ git config --global user.name "Your Name"
+~ git config --global user.email "youremail@domain.com"
+
+~ git config --global core.editor "code --wait"
+~ git config --global diff.tool "default-difftool"
+~ git config --global difftool.default-difftool.cmd "code --wait --diff \"$LOCAL \$REMOTE"
+
+~ git config --list --show-origin
+
+
+~ git config  core.editor 'code -w'
+
+# install nodejs and npm if not installed already
+node -v or sudo apt-get install nodejs
+npm -v or sudo apt get install npm
+
+# clone the repo to your local machine using terminal/command prompt
+git clone https://github.com/tailwindlabs/WithTailwindCSS.git
+cd WithTailwindCSS
+
+# Install dependencies (run this in the project directory)
+npm install
+
+# Start the development server
+npx tailwindcss init ./src && npx tailwindcss build -i ./src/input.html -o ./public/output.css -c ./tailwind.config.
+npx tailwindcss init ./src && npx tailwindcss build -i ./src/input.html -o ./public/output.css -c ./tailwind.config.
+npx tailwind init ./tailwind.config.js
 
 npm init -y
 npm install -D tailwindcss
